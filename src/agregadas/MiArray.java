@@ -9,8 +9,8 @@ public class MiArray {
 		this.arrayEnteros = arrayEnteros;
 		this.nElementos = arrayEnteros.length;
 	}
-
-	// TODO: A�adir documentaci�n para javadoc
+	
+		// TODO: A�adir documentaci�n para javadoc
 	public int[] getArrayEnteros() {
 		return arrayEnteros;
 	}
