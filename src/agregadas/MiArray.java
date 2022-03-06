@@ -10,6 +10,10 @@ public class MiArray {
 		this.nElementos = arrayEnteros.length;
 	}
 	
+		
+		/** 
+		 * @return int[]
+		 */
 		// TODO: A�adir documentaci�n para javadoc
 	public int[] getArrayEnteros() {
 		return arrayEnteros;

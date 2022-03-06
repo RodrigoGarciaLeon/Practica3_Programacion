@@ -11,7 +11,7 @@ public class MiAsignaturaTest {
 	public void setUp() throws Exception {
 	}
 
-	//@Test
+	@Test
 	public void testAnadirEstudiante() {
 		MiAsignatura asignatura = new MiAsignatura("Programacion", 1);
 		Estudiante obj1 = new Estudiante("XX", 19, new double[] {});
@@ -20,7 +20,7 @@ public class MiAsignaturaTest {
 		assertTrue(return_value != -1);
 	}
 
-	//@Test
+	@Test
 	public void testAnadirEstudianteAsignaturaLlena() {
 		MiAsignatura asignatura = new MiAsignatura("Programacion", 1);
 		Estudiante obj1 = new Estudiante("XX", 19, new double[] {});

@@ -43,7 +43,7 @@ public class Estudiante {
 		}
 		return result / (double)notas.length;
 	}
-	
+
 	public String getNombre() {
 		return nombre;
 	}
