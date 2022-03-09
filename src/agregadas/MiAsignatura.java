@@ -12,6 +12,26 @@ package agregadas;
 			this.numeroEstudiantes = 0;
 		}
 
+		public void mostrarEstudiantesAprobados (String nombre)	{
+			for (int i = 0; i < estudiantes.length; i++){
+				if(estudiantes[i].getNombre() == nombre && estudiantes[i].notaMedia() >= 5.0){
+					System.out.println(estudiantes[i].notaMedia() + " " + estudiantes[i].getNombre());
+				}
+			}
+
+
+
+		}
+
+
+
+
+
+
+
+
+
+
 		
 		/** 
 		 * @param estudiante

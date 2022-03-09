@@ -10,6 +10,27 @@ public class MiArray {
 		this.nElementos = arrayEnteros.length;
 	}
 	
+	public MiArray(int[] iniciales, int vacios){
+		arrayEnteros = new int[iniciales.length + vacios];
+	}
+	
+	public void desplazarIzq(int x, int y) {
+		for ( int i = x+1 ; i <= y ; i++) {
+		arrayEnteros[i-1] = arrayEnteros[i];
+		}
+		}
+
+	public void eliminarElementos(int desde, int hasta){
+		for (int i = 0; i < nElementos; i++){
+			if(arrayEnteros[i] >= desde && arrayEnteros[i] <= hasta){
+				desplazarIzq(i, nElementos-1);
+				nElementos--;
+			}
+		}
+	}
+	
+	
+
 		
 		/** 
 		 * @return int[]
