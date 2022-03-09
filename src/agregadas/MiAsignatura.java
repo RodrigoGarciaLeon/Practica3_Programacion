@@ -22,10 +22,9 @@ package agregadas;
 			if(numeroEstudiantes == estudiantes.length){
 				return -1;
 			}
-			for(int i=0; i<estudiantes.length; i++){
-				estudiantes[i] = estudiante;
-				numeroEstudiantes++;
-			}return 1;
+			estudiantes[numeroEstudiantes] = estudiante;
+			numeroEstudiantes++;
+			return 1;
 		}
 
 		
