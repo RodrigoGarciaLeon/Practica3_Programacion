@@ -6,11 +6,11 @@ public class Estudiante {
 	private double[] notas;
 
 	// TODO: A�adir documentaci�n para javadoc
-	public Estudiante(String nombre, int edad, double[] notas) {
+	public Estudiante(String nombre, int edad, double[] fs) {
 		super();
 		this.nombre = nombre;
 		this.edad = edad;
-		this.setNotas(notas);
+		this.setNotas(fs);
 	}
 
 	

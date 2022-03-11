@@ -1,11 +1,15 @@
+import agregadas.Estudiante;
+import agregadas.MiArray;
+import agregadas.MiAsignatura;
+
 /*
- * Al finalizar la sesión de laboratorio, el alumno deberá subir su solución
+ * Al finalizar la sesiï¿½n de laboratorio, el alumno deberï¿½ subir su soluciï¿½n
  * al VPL que tiene en el Campus virtual de la asignatura y, pulsando en el
- * botón de "Evaluar" comprobar que su resultado es correcto; a continuación 
- * lo notifica al profesor quien evaluará su entrega.
+ * botï¿½n de "Evaluar" comprobar que su resultado es correcto; a continuaciï¿½n 
+ * lo notifica al profesor quien evaluarï¿½ su entrega.
  * 
- * La entrega se evaluará atendiendo a los siguientes aspectos: verificación
- * de funcionamiento, claridad del código, comentarios adecuados y respuestas
+ * La entrega se evaluarï¿½ atendiendo a los siguientes aspectos: verificaciï¿½n
+ * de funcionamiento, claridad del cï¿½digo, comentarios adecuados y respuestas
  * adecuadas a las preguntas del profesor.
  */
 
@@ -15,6 +19,13 @@ public class Practica_L3 {
 	
 	public static void main(String[] arg) {
 		VPL_Utils.run_checks();
+		
+		MiAsignatura a = new MiAsignatura("Programacion", 10);
+		Estudiante es = new Estudiante("Carmelo", 18, new double[] {5.0,2.0,});
+		MiArray array = new MiArray(null);
+
+		
+
 	}
 	
 }
