@@ -7,7 +7,7 @@ public class MiArray {
 	// TODO: Añadir documentación para javadoc
 	public MiArray(int[] arrayEnteros) {
 		this.arrayEnteros = arrayEnteros;
-		this.nElementos = arrayEnteros.length;
+		nElementos = arrayEnteros.length;
 	}
 	
 	public MiArray(int[]iniciales, int vacios ) {
@@ -16,21 +16,55 @@ public class MiArray {
 			arrayEnteros[i] = iniciales[i];
 		}
 	}
-	public void desplazarIzq(int x, int y) {
-		for ( int i = x+1 ; i <= y ; i++) {
-		arrayEnteros[i-1] = arrayEnteros[i];
+	
+	/** 
+	 * @param x
+	 * @param y
+	 */
+
+	
+	/** 
+	 * @param desde
+	 * @param hasta
+	 */
+
+	
+	public void eliminarElementos(int desde, int hasta){
+		for (int i = desde; i < hasta;){
+			for (int j = i; j < nElementos-1; j++){
+				arrayEnteros[j] = arrayEnteros[j+1];
+				}
+			nElementos--;
+			hasta--;
 		}
 	}
 
-	public void eliminarElementos(int desde, int hasta){
-		for (int i = 0; i < nElementos; i++){
-			if(arrayEnteros[i] >= desde && arrayEnteros[i] <= hasta--){
-				desplazarIzq(i, nElementos-1);
-				nElementos--;
-			}
-		}
-	}
-	
+	// public void eliminarElementos2(int desde, int hasta){
+	// 	for(int j = desde; j < hasta; j++){
+	// 		arrayEnteros[j] = arrayEnteros[j+1];
+	// 		j--;
+	// 	}
+	// 	nElementos--;
+	// 	hasta--;
+		
+	// }
+
+
+	// public void desplazarIzq(int x, int y) {
+    //     for (int i = x+1; i <= y;i++) {
+    //         arrayEnteros[i-1] = arrayEnteros[i];
+    //     }
+    // }
+	// public void eliminarElementos(int desde, int hasta) {
+    //     for (int i = nElementos-1; i > 0;i--) {
+    //         if(arrayEnteros[i]>= desde && arrayEnteros[i-1] <= hasta--) {
+    //             desplazarIzq(i-1, i);
+    //             nElementos--;
+	// 			i--;
+    //         }
+    //     }
+    // }
+
 
 
 		

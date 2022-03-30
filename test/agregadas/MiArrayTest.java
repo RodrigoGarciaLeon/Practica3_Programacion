@@ -43,4 +43,14 @@ public class MiArrayTest {
 		assertTrue(Arrays.equals(expected, obj.getArrayEnteros()));
 	}
 
+	@Test
+	public void testElminar() {
+		int[] given = new int[] {0,1,2,3,4,5,6};
+		int[] expected     = new int[] {0,6};
+
+		MiArray obj = new MiArray(given);
+		obj.eliminarElementos(1, 5);
+		// assertArrayEquals(expected, given);
+		assertEquals(2, given.length);
+	}
 }
